@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>off-the-record history</title>
+<link rel="stylesheet" type="text/css" href="css/chromeapp.css">
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body style="width: 1080px;">
+
+<section class="pane pane-request request-common" id="request">
+
+<div class="pane pane-response">
+  <div class="pane-response-header">
+    <span>オフレコ履歴 設定 <off the record history> </span>
+  </div>
+  <hr>
+  <div class="pane-response-body">
+設定例
+    <table> 
+    <tr><td class="header-cell">slackの履歴を残さない</td><td>https://*.slack.com/</td></tr>
+    <tr><td class="header-cell">awsコンソールの履歴を残さない</td><td>https://*.console.aws.amazon.com/</td></tr>
+    </table>
+  </div>  
+</div>
+
+
+<div>
+  <div>
+    <div>
+      <div class="headers-form-title"><span class="title-content">URL</span></div> 
+      <div>
+        <div>
+          <div class="header-row">
+            <span class="header-cell"><input type="checkbox" class="gwt-CheckBox" checked></span>
+            <span class="expression-input input-append header-cell-name header-cell"><input type="text" class="gwt-TextBox" placeholder="url" ></span>
+            <button class="btn-remove r-btn r-btn-link header-cell"><i class="fa fa-times-thin"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="headers-btns-row">
+        <button class="list-action-add r-btn r-btn-small r-btn-rounded" id="list-action-add"><span>Add url</span></button>
+      </div>
+      <div class="headers-btns-row">
+		<a class="btn btn-primary" id="list-action-save">Save</a>
+      </div>
+    </div>
+  </div>
+</div>  
+</section> 
+
+</body>
+</html>
